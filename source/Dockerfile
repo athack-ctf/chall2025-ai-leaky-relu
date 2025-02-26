@@ -13,7 +13,7 @@ RUN pip install -r requirements.txt
 COPY ./src .
 
 # Expose port 5000 for Flask
-EXPOSE 2025
+EXPOSE 5000
 
 # Set environment variables for Flask
 ENV FLASK_APP=app.py
