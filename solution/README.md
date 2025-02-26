@@ -1,10 +1,5 @@
 # How to Solve the Challenge?
 
-Provide reproducible steps to solve the challenge. This can include:
+Upload the `sovle_weights.pth` weights. Others are just testing different types of errors (wrong architecture, wrong weights, random weights)
 
-- Runnable code (e.g., `PoC.py`)
-- A Bash script or a sequence of commented commands
-- Well-explained instructions
-- ...
-
-Ensure that all dependencies required to build or run the solution are provided (e.g., `requirements.txt`) or thoroughly documented.
+`design.ipynb` is just to generate correct weights and test.
