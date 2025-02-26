@@ -1,0 +1,3 @@
+Roses are red,
+Violets are blue,
+ATHACKCTF{L0ngL1veOurL0rdAndS4vi0rptrblck}
