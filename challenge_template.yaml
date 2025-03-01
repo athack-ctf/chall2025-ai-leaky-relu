@@ -1,0 +1,41 @@
+# Name should be "Challenge name" if only one flag, or
+# "Challenge name - 1", "Challenge name - 2", etc. if multiple ones.
+# Be careful of the spaces before and after the '-'
+name: ""
+author: ""
+category: <AI>
+description: |
+    Man, I don't know that these engineers are trying to do, but we got access to their model's inference API. See if you can find what they use it for.
+
+    [Start your challenge instance](https://instancer.athackctf.com/chall2025-ai-leaky-relu/create)
+    
+value: 0
+
+# Let's put the challenges as standard for now and we can script to change
+type: standard
+
+
+# Flags specify answers that your challenge use. You should generally provide at least one.
+flags:
+  - type: "static"
+    content: "ATHACKCTF{L0ngL1veOurL0rdAndS4vi0rptrblck}"
+    data: "case_insensitive"
+
+
+# Available: beginner, interac
+tags:
+
+# Provide paths to files from the same directory that this file is in
+files:
+    - ./offline-artifacts/app.py
+    - ./offline-artifacts/model.py
+
+# If multiple flag challenge, put here the names of all previous challenges
+# requirements:
+#     - "Warmup"
+#     - "Are you alive"
+
+# Put hidden by default
+state: hidden
+
+version: "0.1"
