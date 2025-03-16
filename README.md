@@ -1,24 +1,70 @@
-# Chall - AI Leaky Relu
+# @HACK 2025: AI Leaky ReLU
 
-> A difficult challenge that mixes reverse engineering and AI.
+> Authored by [Hugo](https://github.com/hkerma).
 
-## Type
+- **Category**: `AI`
+- **Value**: `300 points`
+- **Tags**: `http`
 
-- [ ] **OFF**line
-- [X] **ON**line
+> Man, I don't know that these engineers are trying to do, but we got access to their model's inference API. See if you can find what they use it for.
+> 
 
-## Designer(s)
+## Files
+- **[Download: app.py](https://github.com/athack-ctf/chall2025-ai-leaky-relu/raw/refs/heads/main/offline-artifacts/app.py)**
+- **[Download: model.py](https://github.com/athack-ctf/chall2025-ai-leaky-relu/raw/refs/heads/main/offline-artifacts/model.py)**
 
-- Hugo Kermabon
+## Access a dockerized instance
 
-## Description
+Run challenge container using docker compose
+```
+docker compose up -d
+```
+Open below URL on your browser
+```
+http://localhost:52001/
+```
+<details>
+<summary>
+How to stop/restart challenge?
+</summary>
 
-In this challenge, participants are presented with a weird neural network model source code. The model uses a lot of a different activation functions all based on ReLU, and variations. At the same time, participants can upload a set of weights for the model on a webserver, which then executes the model on a set of input.
-The goal is to leak the hidden inputs. To that end, participants have to reverse engineering how the model works, upload specific weights, so that the output of the model is a perfect reflection of the output. Then, they can leak the input of the model, which eventually contains the flag.
+To stop the challenge run
+```
+docker compose stop
+```
+To restart the challenge run
+```
+docker compose restart
+```
 
-**IMPORTANT:** This description will **NOT** be shared with participants.
+</details>
 
-## Category(ies)
 
-- `re`
-- `ai`
+## Reveal Flag
+
+Did you try solving this challenge?
+<details>
+<summary>
+Yes
+</summary>
+
+Did you **REALLY** try solving this challenge?
+
+<details>
+<summary>
+Yes, I promise!
+</summary>
+
+Flag: `ATHACKCTF{L0ngL1veOurL0rdAndS4vi0rptrblck}`
+
+</details>
+</details>
+
+
+---
+
+## About @HACK
+[@HACK](https://athackctf.com/) is an annual CTF (Capture The Flag) competition hosted by [HEXPLOIT ALLIANCE](https://hexploit-alliance.com/) and [TECHNATION](https://technationcanada.ca/) at Concordia University in Montreal, Canada.
+
+---
+[Check more challenges from @HACK 2025](https://github.com/athack-ctf/AtHackCTF-2025-Challenges).

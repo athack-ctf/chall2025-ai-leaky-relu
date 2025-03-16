@@ -1,1 +1,0 @@
-Man, I don't know that these engineers are trying to do, but we got access to their model's inference API. See if you can find what they use it for.
