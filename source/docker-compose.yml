@@ -1,8 +1,7 @@
-version: '3.8'
-
 services:
   ai-leaky-relu:
     build: .
     image: athack-ctf/chall2025-ai-leaky-relu:latest
     ports:
-      - "2025:5000"
+    - 52001:5000
+version: '3.8'
